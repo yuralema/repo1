@@ -1,0 +1,35 @@
+ВІРТУАЛЬНЕ ОТОЧЕННЯ (далі - во)
+необхідно знаходитися в папці де хочимо працювти з во (коренева папка проєкту)
+
+- cls                                       # очишення терміналу
+
+- python -m venv venv                       # створення во
+- python -m venv venv1 venv2                # створення декількох во зп раз
+- python -m venv venv --prompt="my_project" # створення во venv з назвою в консолі my_project
+- python -m venv venv --clear               # перезапис існуючого во (очищення во)
+- python -m venv venv --without-pip         # створення во без модуля pip
+
+- C:\Users\Yura\AppData\Local\Programs\Python\Python312\python.exe -m venv venv     # створення во через повний шлях
+
+- venv\Scripts\activate                     # активація во
+- deactivate                                # деактивація во
+
+- pip list                                  # вивід інстальованих модулів
+- pip freeze > requirements.txt             # вивід інстальованих модулів у файл
+- pip install -r requirements.txt           # інсталяція залежностей з файлу requirements
+
+- pip install mathlib                       # інсталяція бібліотеки mathlib
+- pip install mathlib==0.5.0                # інсталяція бібліотеки mathlib версії 0.5.0
+- pip uninstall mathlib                     # деінсталяція бібліотеки mathlib
+
+структура папки venv
+venv\
+    Include\
+        ...
+    Lib\
+        site-packages\
+        ...
+    Scripts\
+        ...
+    pyvenv.cfg
+    
